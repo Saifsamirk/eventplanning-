@@ -1,0 +1,153 @@
+#timeline{
+    //remove all buttons style
+    textarea:hover, 
+    input:hover, 
+    textarea:active, 
+    input:active, 
+    textarea:focus, 
+    input:focus,
+    button:focus,
+    button:active,
+    button:hover,
+    label:focus,
+    .btn:active,
+    .btn.active
+    {
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+    }
+    //
+    #header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        #title{
+            font-size: larger;
+            padding: 20px;
+            font-weight: bold;
+        }
+        #top-btn-grp{
+            display: flex;
+            align-items: center;
+            .bp3-button{
+            margin: 0 5px;
+            height: fit-content;
+            border-radius: 5px;
+            &:first-of-type{
+                background-color: #A6ADC7;
+                background-image: none;
+                color: white;
+                box-shadow: none;
+                .bp3-icon{
+                    color: white;
+                    padding: 0 10px;
+                }
+            }
+        }
+        #add-timeline-btn{
+            background-color: #5063FF;
+            background-image: none;
+            color: white;
+            box-shadow: none;
+            height: fit-content;
+            .bp3-icon{
+                color: white;
+                border-left: 1px solid #3D49C0;
+                padding: 5px 0px 5px 5px;
+                transform: scale(1.5);
+            }
+            .bp3-button-text{
+                padding-right: 20px;
+            }
+        }
+        #zoom-btn{
+            background-color:#A6ADC7 !important ;
+            color: white;
+            border-radius: 5px;
+            .bp3-icon{
+                border: none !important;
+                color: white;
+            }
+        }
+        }
+    }
+    //styles-timeline
+    #timeline-wrapper{
+        // display: flex !important;
+        // position: absolute !important;
+        // left: 0 !important;
+      .rt{
+        width: 100% !important;
+        overflow: hidden !important;
+        margin-top: 30px;
+        // position: absolute;
+        // overflow: scroll !important;
+        // left: -100px;
+      }
+      
+      .rt-grid__cell {
+        border-bottom: none !important;
+        z-index: 1;
+        border: none;
+        &:after{
+            content: 'I';
+            color: #E3E5EE;
+            position: absolute;
+            top: -5px;
+            left: 0;
+        }
+      }
+      .rt-grid__cell:nth-child(odd) {
+        background-color: #F7F8FC;
+      }
+      
+      .rt-element {
+        color: white !important;
+        font-size: small;
+        z-index: 2;
+      }
+      
+      .rt-grid {
+        left: 0 !important;
+        right: 0 !important;
+      }
+      
+      .rt-controls{
+        display: none !important;
+      }
+      
+      .rt-marker{
+        color: #A5ACC6 !important;
+      }
+      .rt-marker.rt-is-visible {
+        color: #A5ACC6 !important; 
+        background-color: #A5ACC6 !important;
+      }
+      .rt-marker--now {
+      display: none !important;
+      }
+      
+      .rt-marker__content {
+      font-size: small;
+      }
+      
+      .rt-timebar__cell {
+        border: none !important;
+        font-size: x-small;
+        font-weight: bold;
+      }
+      
+      .rt-sidebar{
+        // display: none !important;
+    }
+
+      .rt-layout__side {
+        // width: 0;
+        // position: absolute;
+        // z-index: 200000 !important;
+      }
+    }
+    //
+
+}
